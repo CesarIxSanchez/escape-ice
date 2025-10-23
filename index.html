@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <title>Escapa del ICE</title>
+</head>
+<body>
+    <h1>Escapa del ICE mientras llenas tu solicitud de inmigración</h1>
+    <p>
+        Rellena el formulario completamente y dejate atrapar por el ICE o sobrevive 
+        el tiempo que quieras. ¡Es tu decisión!  Hecho por: César Antonio Ix Sánchez. 66271
+    </p>
+
+    <div class="toolbar">
+        <label for="select-dificultad">Dificultad general: </label>
+        <select id="select-dificultad">
+            <option value="facil">Soy muy joven para morir</option>
+            <option value="normal">Hazme mucho daño</option>
+            <option value="dificil">¡Pesadilla!</option>
+        </select>
+
+        <label for="select-musica">Música: </label>
+        <select id="select-musica">
+            <option value="mexico-en-la-piel.mp3" selected>México en la piel</option>
+            <option value="frijolero.mp3">Frijolero</option>
+            <option value="no-podras.mp3">No podrás</option>
+            <option value="como-una-novela.mp3">Como una novela</option>
+        </select>
+
+        <label for="select-fondo">Fondo: </label>
+        <select id="select-fondo">
+            <option value="campeche.png" selected>Campeche Edition</option>
+            <option value="yucatan.jpg">Yucatán Edition</option>
+            <option value="sheinbaum.png">Sheinbaum Edition</option>
+        </select>
+    </div>
+
+    <div class="main-content">
+        <div id="game-area">
+            <div id="player" class="character"></div>
+            <div id="ice" class="character"></div>
+        </div>
+
+        <div class="formulario">
+            <form>
+                <p>Formulario de inmigración</p>
+                <label for="d1">Nombre: </label>
+                <input id="d1" type="text">
+                <label for="d2">Apellido: </label>
+                <input id="d2" type="text">
+                <label for="d3">Fecha de nacimiento: </label>
+                <input id="d3" type="date">
+                <label for="">Sexo</label>
+                <div class="radio-grupo">
+                    <div>
+                        <input type="radio" name="sexo" id="sexo-h" value="h">
+                        <label for="sexo-h">Hombre</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="sexo-m" value="m">
+                        <label for="sexo-m">Mujer</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="sexo-o" value="o">
+                        <label for="sexo-o">Otro</label>
+                    </div>
+                </div>
+                <label for="d4">Fecha de solicitud: </label>
+                <input id="d4" type="date">
+                <label for="d5">Curp: </label>
+                <input id="d5" type="text">
+                <label for="d6">Cuéntanos tu motivo de solicitud: </label>
+                <input id="d6" type="text">
+                <button id="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>
